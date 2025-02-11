@@ -1,0 +1,15 @@
+@keyframes alternateColor {
+    0% {
+      color: #001f86;
+    }
+    50% {
+      color: #71777e; 
+    }
+    100% {
+      color: #1e40af; 
+    }
+  }
+  .rescheduled-text {
+    animation: alternateColor 2s infinite;
+  }
+  

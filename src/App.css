@@ -1,0 +1,173 @@
+.news-banner-container {
+  background-color: #ffffff;
+  padding: 10px 0;
+  overflow: hidden; /* Prevent overflow outside the container */
+  display: flex;
+  align-items: center;
+}
+
+.news-banner-content {
+  display: inline-block;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.news-banner-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e3c72;
+  margin-right: 20px;
+}
+
+.read-more-btn {
+  padding: 8px 20px;
+  background: linear-gradient(to right, #1b263b, #1e3c72, #121212);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.read-more-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.read-more-btn:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 25s linear infinite; /* Adjust the duration (25s) as needed */
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+@media (min-width: 1200px) {
+  .lg-hidden {
+    display: none;
+  }
+}
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  /* Prevent dark mode styling */
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+    background-color: white;
+    color: black;
+  }
+}
+small {
+  font-size: 14px;
+}
+.card2 {
+  display: block;
+  position: relative;
+  max-width: 262px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+
+  /* Thin Gradient Stripe Around Corner */
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(45deg, #00838d, #004d55);
+    z-index: 1;
+    border-radius: 0 4px 0 0; /* Rounded corner for the stripe */
+  }
+}
+.card2 {
+  display: block;
+  position: relative;
+  max-width: 450px;
+  background-color: #f2f6fb;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+
+  /* Triangle with Shadow */
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 30px solid  #1e3c72; /* Colored Triangle */
+    z-index: 1;
+  }
+}
+
+
+
+.access-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.access-button {
+  color: #1e3c72;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.access-button.disabled {
+  color: gray;
+  cursor: not-allowed;
+  text-decoration: none;
+}
