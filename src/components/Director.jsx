@@ -31,7 +31,7 @@ function DirectorMessage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <motion.img
+        {/* <motion.img
           src={Dmm}
           alt="Director"
           className="w-48 h-48 mx-auto md:mr-8 md:ml-0"
@@ -46,7 +46,27 @@ function DirectorMessage() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1 }}
-        />
+        /> */}
+        <div className="flex flex-col items-center justify-start min-h-screen">
+  <motion.img
+    src={Dmm}
+    alt="Director"
+    className="w-48 h-48 mx-auto mt-[-220px]" // Move further up
+    style={{
+      width: "240px",
+      height: "320px",
+      borderRadius: "10%",
+      border: "4px solid #1b263b",
+      objectFit: "cover",
+      boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+    }}
+    initial={{ scale: 0 }}
+    animate={{ scale: 1 }}
+    transition={{ duration: 1 }}
+  />
+</div>
+
+
         <div className="md:flex-1 text-justify" style={{ padding: "0 20px" }}>
           <motion.p
             className="mb-6 pb-2"
@@ -101,6 +121,8 @@ function DirectorMessage() {
           </motion.p>
         </div>
       </motion.div>
+      
+
     </div>
   );
 }
