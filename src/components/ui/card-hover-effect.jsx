@@ -34,7 +34,7 @@ export const Card = ({ className, children, image, hovered }) => {
       className={cn(
         "relative overflow-hidden rounded-lg p-6 flex flex-col md:flex-row items-center space-x-4 container transition-all duration-200 ease-in-out",
         "bg-[#f9fafb] shadow-sm hover:shadow-md",
-        "min-h-[250px] md:min-h-[250px] lg:min-h-[250px] w-full", // Equal card size
+        "min-h-[250px] md:min-h-[250px] lg:min-h-[250px] w-full", 
         className
       )}
     >
@@ -67,7 +67,6 @@ export const Card = ({ className, children, image, hovered }) => {
     </div>
   );
 };
-
 export const CardTitle = ({ className, children }) => {
   return (
     <h2 className={cn("text-lg md:text-xl font-bold text-[#191b1c] relative z-20", className)}>
