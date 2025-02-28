@@ -42,7 +42,7 @@ export const Card = ({ className, children, image, hovered }) => {
       <AnimatePresence>
         {hovered && (
           <motion.span
-            className="absolute inset-0 h-full w-full bg-blue-100 opacity-70"
+            className="absolute inset-0 h-full w-full bg-gray-200 opacity-70"
             layoutId="hoverBackground"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.2 } }}
