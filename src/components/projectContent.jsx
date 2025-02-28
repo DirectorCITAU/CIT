@@ -5,11 +5,9 @@ import Rp1 from "../assets/Projects/rp1.png";
 import Rp2 from "../assets/Projects/rp2.png";
 import Rp3 from "../assets/Projects/rp3.png";
 import Threesixty from "../assets/Projects/360img1.webp";
-
 import Dt1 from "../assets/Projects/DT/dt1.jpg";
 import Dt2 from "../assets/Projects/DT/dt2.png";
 import Dt3 from "../assets/Projects/DT/dt3.png";
-
 import Rv1 from "../assets/Projects/RVR/rv1.jpg";
 import Rv2 from "../assets/Projects/RVR/rv2.jpg";
 import Rv3 from "../assets/Projects/RVR/rv3.jpg";
