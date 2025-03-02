@@ -38,69 +38,10 @@ function Events() {
 
   return (
     <div className="bg-gray-50 py-8">
-      <div className="pt-2 py-5 px-3">
-        <div className="flex items-center justify-center">
-          <div className="text-center font-bold text-xl text-black animate-flash">
-            <Link
-              smooth
-              to="#smartar"
-              className="text-blue-900 rescheduled-text"
-            >
-              Rescheduled workshop on September 21, 22
-            </Link>
-          </div>
-
-          <img src={gif} alt="GIF" className="w-16 h-16 ml-4" />
-        </div>
-
-        <div
-          id="smartar"
-          className="text-center mt-12 font-bold text-xl text-blue-950 pb-4"
-        >
-          Centre for Immersive Technologies (CIT) is conducting a Two-day
-          Workshop on Smart AR: Demystifying the Integration of AI into
-          Augmented Reality
-        </div>
-
-        <div className="flex justify-center">
-          <div className="flex items-center justify-center mx-4">
-            <div className="bg-gray-200 rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-3xl md:mx-auto max-w-screen-sm">
-              <img
-                src={smartAR}
-                alt="News Image"
-                className="max-w-full max-h-screen"
-              />
-            </div>
-          </div>
-          <div className="flex items-center justify-center mx-4">
-            <div className="bg-gray-200 rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-3xl md:mx-auto max-w-screen-sm">
-              <img
-                src={smartAR2}
-                alt="News Image"
-                className="max-w-full max-h-screen"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <a
-            href="https://forms.gle/f2CdCYvKdsrsdHDm7"
-            rel="noreferrer"
-            target="_blank"
-            className="font-bold text-xl text-blue-900 border border-blue-900 p-2 rounded-lg hover:bg-blue-900 hover:text-white"
-          >
-            Register
-          </a>
-        </div>
-      </div>
-      <br />
-      <hr />
+      <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold pt-8 text-[#232627] text-center underline underline-offset-8 decoration-blue-200 decoration-1 font-raleway tracking-wider">
+        COMPLETED EVENTS
+      </h1>
       <div className="max-w-7xl mx-auto p-8">
-        <h2 className="text-3xl font-bold text-black mb-6 text-center">
-          Completed Events
-        </h2>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col space-y-4">
             {events.map((event) => (
