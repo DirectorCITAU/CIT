@@ -1,6 +1,6 @@
 import { HoverEffect } from "./ui/card-hover-effect";
-import Manivannan from "src/assets/ExecutiveCommitee/Manivannan.webp";
-import AnilKumar from "src/assets/ExecutiveCommitee/AnilKumar.webp";
+import Manivannan from "../src/assets/ExecutiveCommitee/Manivannan.webp";
+import AnilKumar from "../src/assets/ExecutiveCommitee/AnilKumar.webp";
 // import  from "src/assets/ExecutiveCommitee/"
 // import  from "src/assets/ExecutiveCommitee/"
 // import  from "src/assets/ExecutiveCommitee/"
