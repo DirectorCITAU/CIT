@@ -1,4 +1,10 @@
 import { HoverEffect } from "./ui/card-hover-effect";
+import Manivannan from "src/assets/ExecutiveCommitee/Manivannan.webp";
+import AnilKumar from "src/assets/ExecutiveCommitee/AnilKumar.webp";
+// import  from "src/assets/ExecutiveCommitee/"
+// import  from "src/assets/ExecutiveCommitee/"
+// import  from "src/assets/ExecutiveCommitee/"
+// import  from "src/assets/ExecutiveCommitee/"
 
 const ExecutiveCommittee = () => {
   const committeeMembers = [
@@ -7,14 +13,14 @@ const ExecutiveCommittee = () => {
       position: "Professor & Director",
       description: "Department of Applied Mechanics,",
       address: "Touch Lab IIT Madras",
-      image: "src/assets/ExecutiveCommitee/Manivannan.webp", 
+      image: {Manivannan}, 
     },
     {
       name: "Mr. Anil Kumar P N",
       position: "Vice President",
       description: "Delivery Head & Development Center Head",
       address: "Infosys, Chennai",
-      image: "src/assets/ExecutiveCommitee/AnilKumar.webp",
+      image: {AnilKumar},
     },
     {
       name: "Mr. A. Robert J Ravi, ITS",
