@@ -11,6 +11,9 @@ import Dt3 from "../assets/Projects/DT/dt3.png";
 import Rv1 from "../assets/Projects/RVR/rv1.jpg";
 import Rv2 from "../assets/Projects/RVR/rv2.jpg";
 import Rv3 from "../assets/Projects/RVR/rv3.jpg";
+import GCG from "../assets/Projects/game_character_generation.webp";
+import AM from "../assets/Projects/Age_Modelling.webp";
+import YA from "../assets/Projects/Yoga_Assistant.webp"
 
 const ProjectContent = () => {
   return (
@@ -213,60 +216,111 @@ const ProjectContent = () => {
         </div>
       </motion.div>
       {/* Additional Projects Section */}
+ 
+      <motion.div
+        className="flex justify-center mb-10"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-5xl w-full">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+        Game Character Generation 
+  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+</h2>
+<br />
+<p className="text-lg text-gray-700 text-center mb-6">
+Self-Supervised Generative Model For Game Character Generation from Photo Realistic Images ( Deployed in hugging face spaces )  
+          </p>
+          <div className="flex justify-center">
+          <motion.img
+            src={GCG}
+            alt="Self-Supervised Generative Model For Game Character Generation from Photo Realistic Images"
+            className="w-3/4 h-96 rounded-md mb-4 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+          />
+          </div>
+        </div>
+      </motion.div>
+<motion.div
+        className="flex justify-center mb-10"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-5xl w-full">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+        Patents Published
+  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+</h2>
+<br />
+<p className="text-lg text-gray-700 text-center mb-6">
+Patent 1 : System and method for Digital Twin based Yoga Assistant to provide Real-Time Pose Correction (Application number:202441058975  09/08/2024)          </p>
+          <div className="flex justify-center">
+            <motion.img
+              src={YA}
+              alt="Digital Twin based Yoga Assistant"
+              className="w-2/3 h-auto object-contain rounded-md transform transition-all duration-300 hover:scale-105"
+            />
+           
+          </div>
+
+          <p className="text-lg text-gray-700 text-center mb-6">
+          Patent 2 : Method for Lifestyle Optimization of Human via Generative model based Age Modelling and Full Body Transformation (Application number:202441063766   06/09/2024)          </p>
+          <div className="flex justify-center">
+            <motion.img
+              src={AM}
+              alt="Age Modelling"
+              className="w-2/3 h-auto object-contain rounded-md transform transition-all duration-300 hover:scale-105"
+            />
+          </div>
+        </div>
+      </motion.div>
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+        Completed Projects
+  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+</h2>
       <div className="flex flex-wrap justify-center gap-6 mb-10">
         {/* Card 1 */}
-        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full">
+        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
           <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
             Smart Contract based Measurement, Reporting, and Verification (MRV)
             System for the voluntary carbon market
           </h3>
-          <div className="bg-gray-200 rounded-full h-4">
-            <div
-              className="bg-blue-500 h-4 rounded-full"
-              style={{ width: "45%" }}
-            ></div>
-          </div>
-          <p className="text-sm text-gray-500 text-center mt-2">
-            45% Completed
-          </p>
+         
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full">
+        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
           <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
             Influence of Twitter on NFT Valuation using Sentiment Analysis
           </h3>
-          <br />
-          <div className="bg-gray-200 rounded-full h-4">
-            <div
-              className="bg-blue-500 h-4 rounded-full"
-              style={{ width: "80%" }}
-            ></div>
-          </div>
-          <p className="text-sm text-gray-500 text-center mt-2">
-            80% Completed
-          </p>
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full">
+        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
           <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
             Unified Smart Contract for Access Control on Blockchain
           </h3>
-          <br />
-          <br />
-          <div className="bg-gray-200 rounded-full h-4">
-            <div
-              className="bg-blue-500 h-4 rounded-full"
-              style={{ width: "90%" }}
-            ></div>
-          </div>
-          <p className="text-sm text-gray-500 text-center mt-2">
-            90% Completed
-          </p>
+        </div>
+        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
+          3D Face Reconstruction Using Self-Supervised Learning With Eyeglass Removal
+          </h3>
+        </div>
+        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
+          Age-Resilient Transformation System with Identity-Preservation Using Latent Space
+Manipulation In GAN
+          </h3>
+        </div>
+        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
+          Text Driven Facial Image to Expressive Video Translation
+          </h3>
         </div>
       </div>
-      
     </>
   );
 };
