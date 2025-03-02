@@ -1,10 +1,10 @@
 import { HoverEffect } from "./ui/card-hover-effect";
 import Manivannan from "../src/assets/ExecutiveCommitee/Manivannan.webp";
 import AnilKumar from "../src/assets/ExecutiveCommitee/AnilKumar.webp";
-// import  from "src/assets/ExecutiveCommitee/"
-// import  from "src/assets/ExecutiveCommitee/"
-// import  from "src/assets/ExecutiveCommitee/"
-// import  from "src/assets/ExecutiveCommitee/"
+import Robert from "../src/assets/ExecutiveCommitee/Robert.webp";
+import Bharathy from "../src/assets/ExecutiveCommitee/Bharathy.webp";
+import Hariharan from "../src/assets/ExecutiveCommitee/Hariharan.webp";
+
 
 const ExecutiveCommittee = () => {
   const committeeMembers = [
@@ -27,21 +27,21 @@ const ExecutiveCommittee = () => {
       position: "Chief Technology Officer (CTO)",
       description: "Department of IT",
       address: "Government of Tamil Nadu, Chennai",
-      image: "src/assets/ExecutiveCommitee/Robert.webp",
+      image: {Robert},
     },
     {
       name: "Dr. CSS Bharathy",
       position: "Founder & Industry Certified 4.0 Professional",
       description: "Fusion VR",
       address: "Chennai",
-      image: "src/assets/ExecutiveCommitee/Bharathy.webp",
+      image: {Bharathy},
     },
     {
       name: "Dr. P. Hariharan, Ph.D",
       position: "Professor, Dept of Manufacturing Engineering, College of Engineering",
       description: "Director, Centre for Constituent Colleges",
       address: "Anna University, Chennai",
-      image: "src/assets/ExecutiveCommitee/Hariharan.webp",
+    image: {Hariharan},
     },
     // Add more committee members here
   ];
