@@ -34,6 +34,19 @@ import IU3 from "../assets/Gallery/Indo-Uk/i3.webp";
 import IU4 from "../assets/Gallery/Indo-Uk/i5.webp";
 import IU5 from "../assets/Gallery/Indo-Uk/i4.webp";
 
+import v1 from "../assets/Gallery/VR/i1.webp"
+import v2 from "../assets/Gallery/VR/i2.webp"
+import v3 from "../assets/Gallery/VR/i3.webp"
+import v4 from "../assets/Gallery/VR/i4.webp"
+import v5 from "../assets/Gallery/VR/i5.webp"
+import v6 from "../assets/Gallery/VR/i6.webp"
+import v7 from "../assets/Gallery/VR/i7.webp"
+import v8 from "../assets/Gallery/VR/i8.webp"
+import v9 from "../assets/Gallery/VR/i9.webp"
+import v10 from "../assets/Gallery/VR/i10.webp"
+
+
+
 const ImageGallery = () => {
   const [category, setCategory] = useState("General");
   const [lightboxIndex, setLightboxIndex] = useState(-1);
@@ -43,6 +56,7 @@ const ImageGallery = () => {
     Inaugural: [II1, II2, II3, II4, II5, II6, II7],
     "Summer Intern": [SM8, SM1, SM2, SM3, SM4, SM5, SM6, SM7],
     "Indo-UK": [IU1, IU2, IU3, IU4, IU5],
+    VR:[v1,v2,v3,v4,v5,v6,v7,v8,v9,v10]
   };
 
   const filteredImages =
@@ -50,7 +64,8 @@ const ImageGallery = () => {
       ? images.General.concat(
           images.Inaugural,
           images["Summer Intern"],
-          images["Indo-UK"]
+          images["Indo-UK"],
+          images.VR
         )
       : images[category];
 
@@ -106,6 +121,16 @@ const ImageGallery = () => {
         >
           Indo - UK
         </button>
+        <button
+          type="button"
+          onClick={() => setCategory("VR")}
+          className={`text-white border border-gray-900 bg-blue-900 hover:bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 hover:text-blue-900 ${
+            category === "Inaugural" ? "border-white text-black" : "text-black"
+          }`}
+        >
+          VR workshop
+        </button>
+        
       </div>
       <div className="flex justify-center flex-wrap">
         {filteredImages.map((image, index) => (
