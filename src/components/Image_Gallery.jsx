@@ -45,7 +45,10 @@ import v8 from "../assets/Gallery/VR/i8.webp"
 import v9 from "../assets/Gallery/VR/i9.webp"
 import v10 from "../assets/Gallery/VR/i10.webp"
 
-
+import P1 from "../assets/Gallery/AR/session1.webp";
+import P2 from "../assets/Gallery/AR/session2.webp";
+import P3 from "../assets/Gallery/AR/session3.webp";
+import P4 from "../assets/Gallery/AR/session5.webp";
 
 const ImageGallery = () => {
   const [category, setCategory] = useState("General");
@@ -56,7 +59,8 @@ const ImageGallery = () => {
     Inaugural: [II1, II2, II3, II4, II5, II6, II7],
     "Summer Intern": [SM8, SM1, SM2, SM3, SM4, SM5, SM6, SM7],
     "Indo-UK": [IU1, IU2, IU3, IU4, IU5],
-    VR:[v1,v2,v3,v4,v5,v6,v7,v8,v9,v10]
+    VR:[v1,v2,v3,v4,v5,v6,v7,v8,v9,v10],
+    AR:[P1,P2,P3,P4],
   };
 
   const filteredImages =
@@ -65,7 +69,8 @@ const ImageGallery = () => {
           images.Inaugural,
           images["Summer Intern"],
           images["Indo-UK"],
-          images.VR
+          images.VR,
+          images.AR
         )
       : images[category];
 
@@ -125,12 +130,20 @@ const ImageGallery = () => {
           type="button"
           onClick={() => setCategory("VR")}
           className={`text-white border border-gray-900 bg-blue-900 hover:bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 hover:text-blue-900 ${
-            category === "Inaugural" ? "border-white text-black" : "text-black"
+            category === "VR" ? "border-white text-black" : "text-black"
           }`}
         >
           VR workshop
         </button>
-        
+        <button
+          type="button"
+          onClick={() => setCategory("AR")}
+          className={`text-white border border-gray-900 bg-blue-900 hover:bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 hover:text-blue-900 ${
+            category === "AR" ? "border-white text-black" : "text-black"
+          }`}
+        >
+          Smart AR Session
+        </button>
       </div>
       <div className="flex justify-center flex-wrap">
         {filteredImages.map((image, index) => (
