@@ -54,7 +54,7 @@ function Events() {
         Coming Up
       </h2>
       <p className="text-lg md:text-xl text-blue-800 font-medium leading-relaxed">
-        2-day Online Training Program on <span className="font-semibold italic text-blue-900">“The Immersive Shift: Future of XR Devices, Platforms and Metaverse Integration”</span>
+        2-day Online Training Program on <span className="font-semibold italic text-blue-900">“The Immersive Shift: Future of XR Devices, Platforms and Metaverse Integration”</span> <span className="text-blue-700 font-semibold">— 9<sup>th</sup> - 10<sup>th</sup> June, 2025</span>
       </p>
       <p className="mt-3 text-sm md:text-base text-blue-700 font-semibold">
         Registration will open shortly on this page. Stay tuned!
