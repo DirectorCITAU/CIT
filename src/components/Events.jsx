@@ -7,6 +7,7 @@ import smartAR from "../assets/News/smartAR.jpg";
 import smartAR2 from "../assets/News/smartAR2.jpg";
 import gif from "../assets/News/new.gif";
 import unity from "../assets/News/CIT Workshop Brochure Final.pdf";
+import smartarpdf from "../assets/News/Smart AR_CIT (5)_compressed.pdf"
 import "./news1.css";
 
 function Events() {
@@ -15,18 +16,23 @@ function Events() {
   const events = [
     {
       id: "Event 1",
+      title: "Two-day Online Workshop on Smart AR",
+      image: smartarpdf,
+    },
+    {
+      id: "Event 2",
       title: "Two-day Workshop on Virtual Reality Development",
       description:
         "Centre for Faculty & Professional Development and Centre for Immersive Technologies (CIT) jointly conducted a Two-day Workshop on Virtual Reality Development with Unity 3D.",
       image: news2,
     },
     {
-      id: "Event 2",
+      id: "Event 3",
       title: "Virtual Reality Development with Unity 3D",
       image: unity,
     },
     {
-      id: "Event 3",
+      id: "Event 4",
       title: "Internship Program 2023",
       description:
         "CIT successfully completed a 5-week Internship program 2023, developing VR POCs for Digital Twin, a 360° virtual tour for CEG, and Relaxation VR.",
@@ -74,10 +80,10 @@ function Events() {
             <p className="text-gray-700 text-justify mb-4">
               {currentEvent.description}
             </p>
-            {currentEvent.id === "Event 2" ? (
+            {currentEvent.id === "Event 3" || currentEvent.id==="Event 1"? (
               <div>
                 <iframe
-                  src={unity}
+                  src={currentEvent.image}
                   title="Workshop Brochure"
                   width="100%"
                   height="500"
