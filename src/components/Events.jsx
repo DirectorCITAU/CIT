@@ -44,6 +44,25 @@ function Events() {
 
   return (
     <div className="bg-gray-50 py-8">
+      <div className="bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 border-l-8 border-blue-500 p-6 mx-4 md:mx-16 my-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div className="flex items-start gap-4">
+    <div className="text-blue-600 text-3xl">
+      📢
+    </div>
+    <div>
+      <h2 className="text-2xl md:text-3xl font-bold mb-2 font-raleway tracking-wide text-blue-900">
+        Coming Up
+      </h2>
+      <p className="text-lg md:text-xl text-blue-800 font-medium leading-relaxed">
+        2-day Online Training Program on <span className="font-semibold italic text-blue-900">“The Immersive Shift: Future of XR Devices, Platforms and Metaverse Integration”</span>
+      </p>
+      <p className="mt-3 text-sm md:text-base text-blue-700 font-semibold">
+        Registration will open shortly on this page. Stay tuned!
+      </p>
+    </div>
+  </div>
+</div>
+
       <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold pt-8 text-[#232627] text-center underline underline-offset-8 decoration-blue-200 decoration-1 font-raleway tracking-wider">
         COMPLETED EVENTS
       </h1>
