@@ -57,7 +57,7 @@ function Events() {
     <strong>Organized by:</strong> Centre for Immersive Technologies, CEG, Anna University, Chennai
   </p>
   <p className="text-gray-700 mb-4">
-    <strong>Dates:</strong> June 9 and 10, 2025
+    <strong>Dates:</strong> June 27 and 28, 2025
   </p>
   <p className="text-gray-700 mb-4">
     This program, led by experts from both industry and academia, will spotlight the latest innovations and emerging trends in XR technologies and Metaverse platforms. Sessions will include live demos and guided walkthroughs of cutting-edge XR tools.
@@ -81,7 +81,7 @@ function Events() {
   </p>
   <p className="text-blue-700 font-semibold mb-4">
     Register here: <a href="https://bit.ly/4dvhS06" target="_blank" rel="noopener noreferrer" className="underline">https://bit.ly/4dvhS06</a><br />
-    <span className="text-red-600 font-bold">Last date to register: June 5, 2025</span>
+    <span className="text-red-600 font-bold">Last date to register: June 25, 2025</span>
   </p>
   <p className="text-blue-700 font-semibold text-lg mb-3 text-center">
     View Brochure Below
