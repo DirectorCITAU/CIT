@@ -7,7 +7,7 @@ import smartAR2 from "../assets/News/smartAR2.jpg";
 import gif from "../assets/News/new.gif";
 import unity from "../assets/News/CIT Workshop Brochure Final.pdf";
 import smartarpdf from "../assets/News/Smart AR_CIT (5)_compressed.pdf";
-import immersiveShiftPDF from "../assets/News/ImmersiveShift2025.pdf"; // ← new brochure PDF
+import immersiveShiftPDF from "../assets/News/ImmersiveShift2025.pdf"; 
 import "./news1.css";
 
 function Events() {
@@ -38,6 +38,14 @@ function Events() {
         "CIT successfully completed a 5-week Internship program 2023, developing VR POCs for Digital Twin, a 360° virtual tour for CEG, and Relaxation VR.",
       image: news1,
     },
+    {
+      id: "Event 5",
+      title:
+        "The Immersive Shift: Future of XR Devices, Platforms, and Metaverse Integration",
+      description:
+        "An Industry-Collaborated Two-Day Online Training Program organized by the Centre for Immersive Technologies, CEG, Anna University, Chennai on June 27 and 28, 2025. The program covered the latest XR innovations and Metaverse platforms, featuring live demos and expert-led sessions.",
+      image: immersiveShiftPDF,
+    },
   ];
 
   const currentEvent = events.find((event) => event.id === selectedEvent);
@@ -45,7 +53,7 @@ function Events() {
   return (
     <div className="bg-gray-50 py-8">
       {/* NEW PDF DISPLAY BLOCK WITH REGISTRATION */}
-  
+{/*   
 <div className="bg-white p-6 mx-4 md:mx-16 my-6 rounded-xl shadow-lg">
   <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue-900 font-raleway tracking-wide">
     An Industry-Collaborated Two-Day Online Training Program on
@@ -93,7 +101,7 @@ function Events() {
     height="500"
     className="rounded-lg border border-gray-300"
   ></iframe>
-</div>
+</div> */}
 
 
       {/* COMPLETED EVENTS */}
@@ -133,7 +141,9 @@ function Events() {
             <p className="text-gray-700 text-justify mb-4">
               {currentEvent.description}
             </p>
-            {currentEvent.id === "Event 3" || currentEvent.id === "Event 1" ? (
+            {currentEvent.id === "Event 1" ||
+            currentEvent.id === "Event 3" ||
+            currentEvent.id === "Event 5" ? (
               <div>
                 <iframe
                   src={currentEvent.image}
