@@ -82,29 +82,40 @@ function Course_offered() {
           ONLINE COURSES
         </h1>
       </div>
+
       <div className="my-8 mx-4">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-center">
           {courses.map((course, index) => (
-            <div className="card2">
-   <div className="mt-auto">
-               <h2 className="text-2xl font-bold mb-2 text-[#191b1c] text-center">{course.name}</h2>
-             </div>
-               <div className="mt-auto pt-4">
-                <h1 className="text-xl font-medium mb-2 text-[#191b1c] text-center">{course.company}</h1>
-               </div>
-               <div className="mt-auto pt-4">
-                 <p className="text-slate-900 mb-2 mx-auto text-center">{course.description}</p>
-               </div>
-  <div className="access-button-container">
-    {course.enabled ? (
-      <a href={course.link} target="_blank" rel="noopener noreferrer" className="access-button">
-        Access
-      </a>
-    ) : (
-      <span className="access-button disabled">Access</span>
-    )}
-  </div>
-</div>
+            <div key={index} className="card2">
+              <div className="mt-auto">
+                <h2 className="text-2xl font-bold mb-2 text-[#191b1c] text-center">
+                  {course.name}
+                </h2>
+              </div>
+
+              {/* Removed company display here */}
+
+              <div className="mt-auto pt-4">
+                <p className="text-slate-900 mb-2 mx-auto text-center">
+                  {course.description}
+                </p>
+              </div>
+
+              <div className="access-button-container">
+                {course.enabled ? (
+                  <a
+                    href={course.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="access-button"
+                  >
+                    Access
+                  </a>
+                ) : (
+                  <span className="access-button disabled">Access</span>
+                )}
+              </div>
+            </div>
           ))}
         </div>
       </div>
@@ -113,4 +124,3 @@ function Course_offered() {
 }
 
 export default Course_offered;
-
