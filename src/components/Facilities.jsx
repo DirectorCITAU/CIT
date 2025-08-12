@@ -32,26 +32,25 @@ const Facilities = () => {
     {facilities.map((facility, index) => (
      
       <CardContainer key={index} className="inter-var">
-  <CardBody
-    className="bg-gray-50 relative group/card dark:bg-gray-50 dark:border-white/[0.2] border-black/[0.1] w-96 h-96 rounded-xl p-4 border flex flex-col items-center"
-  >
-    <CardItem
-      as="p"
-      translateZ="60"
-      className="text-lg leading-relaxed text-center text-gray-800 dark:text-gray-800"
-    >
-      {facility.desc}
-    </CardItem>
-    <CardItem translateZ="100" className="w-full mt-4">
-      <img
-        src={facility.image}
-        alt={facility.desc}
-        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-      />
-    </CardItem>
-  </CardBody>
-</CardContainer>
-
+        <CardBody
+          className="bg-gray-50 relative group/card dark:bg-gray-50 dark:border-white/[0.2] border-black/[0.1] w-96 h-96 rounded-xl p-2 border flex flex-col items-center"
+        >
+          <CardItem
+            as="p"
+            translateZ="60"
+            className="text-lg leading-relaxed text-center text-gray-800 dark:text-gray-800"
+          >
+            {facility.desc}
+          </CardItem>
+          <CardItem translateZ="100" className="w-full mt-2">
+            <img
+              src={facility.image}
+              alt={facility.desc}
+              className="h-[16rem] w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            />
+          </CardItem>
+        </CardBody>
+      </CardContainer>
     ))}
   </div>
 </div>
