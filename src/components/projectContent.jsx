@@ -21,8 +21,7 @@ const ProjectContent = () => {
       <h1 className="text-4xl text-[#232627] font-bold mb-6 p-5 tracking-wider font-raleway underline underline-offset-8 decoration-blue-200 decoration-1 text-center">
         PROJECTS
       </h1>
-
-      {/* 360º Virtual Tour Section */}
+            {/* 360º Virtual Tour Section */}
       <motion.div
         className="flex justify-center mb-10"
         initial={{ opacity: 0, y: 50 }}
@@ -31,12 +30,12 @@ const ProjectContent = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-6 max-w-2xl w-full">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
-  360º Virtual Tour of CEG Campus, Anna University
-  
-  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
-</h2>
-<br />
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+            360º Virtual Tour of CEG Campus, Anna University
+
+            <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+          </h2>
+          <br />
 
           <motion.img
             src={Threesixty}
@@ -66,12 +65,12 @@ const ProjectContent = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-5xl w-full">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
-  Digital Twin
-  
-  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
-</h2>
-<br />
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+            Digital Twin
+
+            <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+          </h2>
+          <br />
 
           {/* Separate div for the first two images with styled box */}
           <div className=" p-4 mb-6 rounded-lg flex gap-6">
@@ -107,12 +106,12 @@ const ProjectContent = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-5xl w-full">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
-  Relaxation VR
-  
-  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
-</h2>
-<br />
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+            Relaxation VR
+
+            <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+          </h2>
+          <br />
 
           {/* First row with two images */}
           <div className=" p-4 mb-6 rounded-lg flex gap-6">
@@ -148,12 +147,12 @@ const ProjectContent = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-5xl w-full">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
-       3D Models
-  
-  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
-</h2>
-<br />
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+            3D Models
+
+            <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+          </h2>
+          <br />
           <div className="flex justify-center">
             <motion.img
               src={AR}
@@ -173,23 +172,23 @@ const ProjectContent = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-5xl w-full">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
-        Robust and Photorealistic 3D Face Reconstruction Model
-  
-  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
-</h2>
-<br />
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+            Robust and Photorealistic 3D Face Reconstruction Model
+
+            <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+          </h2>
+          <br />
           <p className="text-lg text-gray-700 text-center mb-6">
             Robust and Photorealistic 3D Face Reconstruction Model by removing
             occlusions and captures the expressions, age, and ethnicity of the
             Input Images.
           </p>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
-       Deliverables
-  
-  <span className="absolute bottom-[-6px] left-1/2 w-20 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
-</h2>
-<br />
+            Deliverables
+
+            <span className="absolute bottom-[-6px] left-1/2 w-20 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+          </h2>
+          <br />
 
           {/* First row with two images */}
           <div className="flex gap-6 justify-between mb-6">
@@ -216,7 +215,7 @@ const ProjectContent = () => {
         </div>
       </motion.div>
       {/* Additional Projects Section */}
- 
+
       <motion.div
         className="flex justify-center mb-10"
         initial={{ opacity: 0, y: 50 }}
@@ -225,24 +224,48 @@ const ProjectContent = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-5xl w-full">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
-        Game Character Generation 
-  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
-</h2>
-<br />
-<p className="text-lg text-gray-700 text-center mb-6">
-Self-Supervised Generative Model For Game Character Generation from Photo Realistic Images ( Deployed in hugging face spaces )  
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+            Game Character Generation
+            <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+          </h2>
+          <br />
+          <p className="text-lg text-gray-700 text-center mb-6">
+            Self-Supervised Generative Model For Game Character Generation from Photo Realistic Images ( Deployed in hugging face spaces )
           </p>
           <div className="flex justify-center">
-          <motion.img
-            src={GCG}
-            alt="Self-Supervised Generative Model For Game Character Generation from Photo Realistic Images"
-            className="w-3/4 h-96 rounded-md mb-4 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-          />
+            <motion.img
+              src={GCG}
+              alt="Self-Supervised Generative Model For Game Character Generation from Photo Realistic Images"
+              className="w-3/4 h-96 rounded-md mb-4 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            />
           </div>
         </div>
       </motion.div>
-<motion.div
+            <motion.div
+        className="flex justify-center mb-10"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-4xl w-full">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+            Funded Project
+            <span className="absolute bottom-[-6px] left-1/2 w-64 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+          </h2>
+          <p className="text-lg text-gray-700 text-center mb-4 font-medium">
+            Digital Twin and AI-Powered Yoga Assistant System with Real-Time Asana Pose Estimation and Corrective Feedback
+          </p>
+          <p className="text-md text-gray-600 text-center mb-2">
+            Funded by Chief Minister's Research Grant Scheme (CMRG), 2025–2028
+          </p>
+          <p className="text-md text-gray-700 text-center font-semibold">
+            Principal Investigator: Dr. S. Chitrakala
+          </p>
+        </div>
+      </motion.div>
+
+      <motion.div
         className="flex justify-center mb-10"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -250,37 +273,61 @@ Self-Supervised Generative Model For Game Character Generation from Photo Realis
         transition={{ duration: 0.8 }}
       >
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-5xl w-full">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
-        Patents Published
-  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
-</h2>
-<br />
-<p className="text-lg text-gray-700 text-center mb-6">
-Patent 1 : System and method for Digital Twin based Yoga Assistant to provide Real-Time Pose Correction (Application number:202441058975  09/08/2024)          </p>
-          <div className="flex justify-center">
-            <motion.img
-              src={YA}
-              alt="Digital Twin based Yoga Assistant"
-              className="w-2/3 h-auto object-contain rounded-md transform transition-all duration-300 hover:scale-105"
-            />
-           
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
+            Patents Published
+            <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+          </h2>
+          <br />
+          {/* Patent 1 */}
+          <div className="mb-10">
+            <p className="text-lg text-gray-700 text-center mb-2 font-medium">
+              Patent 1: System and method for Digital Twin based Yoga Assistant to provide Real-Time Pose Correction
+            </p>
+            <p className="text-md text-gray-600 text-center mb-4">
+              Application Number: 202441058975 (09/08/2024)
+            </p>
+            <p className="text-md text-gray-700 text-center mb-6 font-semibold">
+              Authors: Dr. S. Chitrakala, Surendira Balaji N, Nirubama Anbhazhakan, Nehal Baid
+            </p>
+
+
+            <div className="flex justify-center">
+              <motion.img
+                src={YA}
+                alt="Digital Twin based Yoga Assistant"
+                className="w-2/3 h-auto object-contain rounded-md transform transition-all duration-300 hover:scale-105"
+              />
+            </div>
           </div>
 
-          <p className="text-lg text-gray-700 text-center mb-6">
-          Patent 2 : Method for Lifestyle Optimization of Human via Generative model based Age Modelling and Full Body Transformation (Application number:202441063766   06/09/2024)          </p>
-          <div className="flex justify-center">
-            <motion.img
-              src={AM}
-              alt="Age Modelling"
-              className="w-2/3 h-auto object-contain rounded-md transform transition-all duration-300 hover:scale-105"
-            />
+
+          {/* Patent 2 */}
+          <div>
+            <p className="text-lg text-gray-700 text-center mb-2 font-medium">
+              Patent 2: Method for Lifestyle Optimization of Humans via Generative Model based Age Modelling and Full Body Transformation
+            </p>
+            <p className="text-md text-gray-600 text-center mb-4">
+              Application Number: 202441063766 (06/09/2024)
+            </p>
+            <p className="text-md text-gray-700 text-center mb-6 font-semibold">
+              Authors: Dr. S. Chitrakala, Navaneetha Krishnan R, Kavin Prasad K, Saikumarran SK
+            </p>
+
+
+            <div className="flex justify-center">
+              <motion.img
+                src={AM}
+                alt="Age Modelling"
+                className="w-2/3 h-auto object-contain rounded-md transform transition-all duration-300 hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </motion.div>
       <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center relative">
         Completed Projects
-  <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
-</h2>
+        <span className="absolute bottom-[-6px] left-1/2 w-80 h-0.5 bg-gray-300 rounded-sm transform -translate-x-1/2"></span>
+      </h2>
       <div className="flex flex-wrap justify-center gap-6 mb-10">
         {/* Card 1 */}
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
@@ -288,7 +335,7 @@ Patent 1 : System and method for Digital Twin based Yoga Assistant to provide Re
             Smart Contract based Measurement, Reporting, and Verification (MRV)
             System for the voluntary carbon market
           </h3>
-         
+
         </div>
 
         {/* Card 2 */}
@@ -306,18 +353,18 @@ Patent 1 : System and method for Digital Twin based Yoga Assistant to provide Re
         </div>
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
           <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
-          3D Face Reconstruction Using Self-Supervised Learning With Eyeglass Removal
+            3D Face Reconstruction Using Self-Supervised Learning With Eyeglass Removal
           </h3>
         </div>
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
           <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
-          Age-Resilient Transformation System with Identity-Preservation Using Latent Space
-Manipulation In GAN
+            Age-Resilient Transformation System with Identity-Preservation Using Latent Space
+            Manipulation In GAN
           </h3>
         </div>
         <div className="bg-white shadow-lg hover:shadow-2xl transition-shadow rounded-lg p-6 max-w-xs w-full flex items-center justify-center text-center">
           <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
-          Text Driven Facial Image to Expressive Video Translation
+            Text Driven Facial Image to Expressive Video Translation
           </h3>
         </div>
       </div>
