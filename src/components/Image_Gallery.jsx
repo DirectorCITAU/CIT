@@ -49,6 +49,16 @@ import P1 from "../assets/Gallery/AR/session1.webp";
 import P2 from "../assets/Gallery/AR/session2.webp";
 import P3 from "../assets/Gallery/AR/session3.webp";
 import P4 from "../assets/Gallery/AR/session5.webp";
+ 
+import MIT1 from"../assets/Gallery/MIT/mit1.webp";
+import MIT2 from "../assets/Gallery/MIT/mit2.webp";
+import MIT3 from "../assets/Gallery/MIT/mit3.webp";
+import MIT4 from "../assets/Gallery/MIT/mit4.webp";
+import MIT5 from "../assets/Gallery/MIT/mit5.webp";   
+import MIT6 from "../assets/Gallery/MIT/mit6.webp";
+import MIT7 from "../assets/Gallery/MIT/mit7.webp";
+import MIT8 from "../assets/Gallery/MIT/mit8.webp"; 
+import MIT9 from "../assets/Gallery/MIT/mit9.webp"; 
 
 const ImageGallery = () => {
   const [category, setCategory] = useState("General");
@@ -61,6 +71,7 @@ const ImageGallery = () => {
     "Indo-UK": [IU1, IU2, IU3, IU4, IU5],
     VR:[v1,v2,v3,v4,v5,v6,v7,v8,v9,v10],
     AR:[P1,P2,P3,P4],
+    MIT:[MIT4,MIT5,MIT6,MIT7,MIT8,MIT9,MIT1,MIT2,MIT3],
   };
 
   const filteredImages =
@@ -70,7 +81,8 @@ const ImageGallery = () => {
           images["Summer Intern"],
           images["Indo-UK"],
           images.VR,
-          images.AR
+          images.AR,
+          images.MIT
         )
       : images[category];
 
@@ -143,6 +155,15 @@ const ImageGallery = () => {
           }`}
         >
           Smart AR Session
+        </button>
+        <button
+          type="button"
+          onClick={() => setCategory("MIT")}
+          className={`text-white border border-gray-900 bg-blue-900 hover:bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 hover:text-blue-900 ${
+            category === "MIT" ? "border-white text-black" : "text-black"
+          }`}
+        >
+          MIT Visit
         </button>
       </div>
       <div className="flex justify-center flex-wrap">
