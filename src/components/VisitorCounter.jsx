@@ -3,16 +3,44 @@ import { useEffect, useState } from "react";
 import { Counter } from "counterapi";
 import CountUp from "react-countup";
 import { FaUsers } from "react-icons/fa";
+
+function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(";").shift();
+  return null;
+}
+
+function setCookie(name, value, days = 1) {
+  const expires = new Date(Date.now() + days * 864e5).toUTCString();
+  document.cookie = `${name}=${value}; expires=${expires}; path=/; SameSite=Lax`;
+}
+
 const VisitorCounter = () => {
   const [count, setCount] = useState(0);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const counter = new Counter({ workspace: "citwebsite" }); 
-    async function incrementCounter() {
+    const counter = new Counter({ workspace: "citwebsite" });
+    const counterKey = "visitors-cit";
+    const lastVisitKey = "lastVisitTime";
+    const now = Date.now();
+    const lastVisit = getCookie(lastVisitKey);
+    const oneDay = 24 * 60 * 60 * 1000;
+
+    async function incrementIfAllowed() {
       try {
-        const result = await counter.up("visitors-cit");
-        setCount(result.data.up_count);
+        let result;
+
+        if (!lastVisit || now - parseInt(lastVisit, 10) > oneDay) {
+          result = await counter.up(counterKey);
+          setCookie(lastVisitKey, now.toString(), 1);
+          setCount(result.data.up_count);
+        } else {
+          result = await counter.get(counterKey);
+          setCount(result.data.up_count);
+        }
+
         setLoading(false);
       } catch (err) {
         console.error("Counter API error:", err);
@@ -21,7 +49,7 @@ const VisitorCounter = () => {
       }
     }
 
-    incrementCounter();
+    incrementIfAllowed();
   }, []);
 
   return (
@@ -36,11 +64,7 @@ const VisitorCounter = () => {
         </h2>
 
         <p className="text-4xl font-roboto font-bold text-[#2D2D2D]">
-          {loading ? (
-            "Loading..."
-          ) : (
-            <CountUp end={count} duration={2} separator="," />
-          )}
+          {loading ? "Loading..." : <CountUp end={count} duration={2} separator="," />}
         </p>
       </div>
     </div>
