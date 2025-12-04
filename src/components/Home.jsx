@@ -6,6 +6,7 @@ import DT from '../assets/DT.webp';
 import Three from '../assets/threesixty.webp';
 import Card from './HomeCard';
 import BackGround from '../assets/BG.gif';
+import VisitorCounter from './VisitorCounter';
 import "@fontsource/raleway";
 import "@fontsource/roboto";
 const Home = () => {
@@ -48,6 +49,9 @@ const Home = () => {
                     <Card backgroundImage={Meta} text="Metaverse" />
                     <Card backgroundImage={DT} text="Digital Twin" />
                     <Card backgroundImage={Three} text="360° Content" />
+                </div>
+                <div className="mt-12">
+                        <VisitorCounter />
                 </div>
             </div>
         </div>
